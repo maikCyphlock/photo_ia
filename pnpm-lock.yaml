@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@cloudinary/url-gen': ^1.9.1
+  '@rpldy/upload-button': ^1.4.0
   '@rpldy/upload-preview': ^1.4.0
   '@rpldy/uploady': ^1.4.0
   autoprefixer: ^10.4.13
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   '@cloudinary/url-gen': 1.9.1
+  '@rpldy/upload-button': 1.4.0_biqbaboplfbrettd7655fr4n2y
   '@rpldy/upload-preview': 1.4.0_biqbaboplfbrettd7655fr4n2y
   '@rpldy/uploady': 1.4.0_biqbaboplfbrettd7655fr4n2y
   eslint: 8.34.0
@@ -291,6 +293,17 @@ packages:
     resolution: {integrity: sha512-61jWvYU1bCgbzRGtk20vf0hGjLX48Zp6dakieAqW9+sucoujrcpxibd6q1cGPsFn/sx5E4xCOVRhJXfY1erTSQ==}
     dependencies:
       '@rpldy/shared': 1.4.0
+    dev: false
+
+  /@rpldy/upload-button/1.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-FQsQppwmn2ryK1F5Hov8UqNcIsikvNSr8mBiy1vj1GrvPIqLJ8SrJ/qtnLuVyASlCdxMf+LOpgPsjg5hVo4ENQ==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@rpldy/shared-ui': 1.4.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@rpldy/upload-preview/1.4.0_biqbaboplfbrettd7655fr4n2y:
