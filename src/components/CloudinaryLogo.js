@@ -2,7 +2,7 @@ import React from 'react'
 
 function CloudinaryLogo () {
   return (
-    <><svg class="w-36" style={{ fill: '#3448c5' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 96.77"
+    <><svg className="w-36" style={{ fill: '#3448c5' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 96.77"
     ><g id="Layer_2" data-name="Layer 2"
       ><g id="Layer_1-2" data-name="Layer 1"
         ><path

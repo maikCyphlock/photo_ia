@@ -2,7 +2,7 @@ import React from 'react'
 import CloudinaryLogo from '@/components/CloudinaryLogo'
 function CloudinaryPatreon () {
   return (
-    <footer class="flex justify-center col-span-2 items-center gap-x-2 font-semibold pt-10">
+    <footer className="flex justify-center col-span-2 items-center gap-x-2 font-semibold pt-10">
     Patrocinado por
     <a
         href="https://cloudinary.com"
