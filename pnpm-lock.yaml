@@ -2,9 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@cloudinary/url-gen': ^1.9.1
+  '@rpldy/upload-button': ^1.4.0
+  '@rpldy/upload-drop-zone': ^1.4.0
   '@rpldy/upload-preview': ^1.4.0
   '@rpldy/uploady': ^1.4.0
   autoprefixer: ^10.4.13
+  dropzone: 6.0.0-beta.2
   eslint: 8.34.0
   eslint-config-next: 13.2.1
   next: 13.2.1
@@ -16,8 +19,11 @@ specifiers:
 
 dependencies:
   '@cloudinary/url-gen': 1.9.1
+  '@rpldy/upload-button': 1.4.0_biqbaboplfbrettd7655fr4n2y
+  '@rpldy/upload-drop-zone': 1.4.0_biqbaboplfbrettd7655fr4n2y
   '@rpldy/upload-preview': 1.4.0_biqbaboplfbrettd7655fr4n2y
   '@rpldy/uploady': 1.4.0_biqbaboplfbrettd7655fr4n2y
+  dropzone: 6.0.0-beta.2
   eslint: 8.34.0
   eslint-config-next: 13.2.1_7kw3g6rralp5ps6mg3uyzz6azm
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
@@ -293,6 +299,29 @@ packages:
       '@rpldy/shared': 1.4.0
     dev: false
 
+  /@rpldy/upload-button/1.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-FQsQppwmn2ryK1F5Hov8UqNcIsikvNSr8mBiy1vj1GrvPIqLJ8SrJ/qtnLuVyASlCdxMf+LOpgPsjg5hVo4ENQ==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@rpldy/shared-ui': 1.4.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@rpldy/upload-drop-zone/1.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-dRAxvr6CAVpX925PDs7ovdqZnnCtNGTT4TOdrZxT76NSXsNXoXV2w3hkC2T4XeEN/BLzgbAcjLORkqJAGrUUDQ==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@rpldy/shared-ui': 1.4.0_biqbaboplfbrettd7655fr4n2y
+      html-dir-content: 0.3.2
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
   /@rpldy/upload-preview/1.4.0_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-Fy6arG53+DFkiJbt8lsJQXR0YiFQl2ZJEJga28rMahqcrqgHweF5tsaZ/RUBpBBSG4pzbs4yYB8Ub+2bSj49hg==}
     peerDependencies:
@@ -332,6 +361,10 @@ packages:
 
   /@rushstack/eslint-patch/1.2.0:
     resolution: {integrity: sha512-sXo/qW2/pAcmT43VoRKOJbDOfV3cYpq3szSVfIThQXNt+E4DfKj361vaAt3c88U5tPUxzEswam7GW48PJqtKAg==}
+    dev: false
+
+  /@swc/helpers/0.2.14:
+    resolution: {integrity: sha512-wpCQMhf5p5GhNg2MmGKXzUNwxe7zRiCsmqYsamez2beP7mKPCSiu+BjZcdN95yYSzO857kr0VfQewmGpS77nqA==}
     dev: false
 
   /@swc/helpers/0.4.14:
@@ -761,6 +794,13 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+
+  /dropzone/6.0.0-beta.2:
+    resolution: {integrity: sha512-k44yLuFFhRk53M8zP71FaaNzJYIzr99SKmpbO/oZKNslDjNXQsBTdfLs+iONd0U0L94zzlFzRnFdqbLcs7h9fQ==}
+    dependencies:
+      '@swc/helpers': 0.2.14
+      just-extend: 5.1.1
+    dev: false
 
   /electron-to-chromium/1.4.311:
     resolution: {integrity: sha512-RoDlZufvrtr2Nx3Yx5MB8jX3aHIxm8nRWPJm3yVvyHmyKaRvn90RjzB6hNnt0AkhS3IInJdyRfQb4mWhPvUjVw==}
@@ -1444,6 +1484,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
 
+  /html-dir-content/0.3.2:
+    resolution: {integrity: sha512-a1EJZbvBGmmFwk9VxFhEgaHkyXUXKTkw0jr0FCvXKCqgzO1H0wbFQbbzRA6FhR3twxAyjqVc80bzGHEmKrYsSw==}
+    dev: false
+
   /ignore/5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
@@ -1675,6 +1719,10 @@ packages:
     dependencies:
       array-includes: 3.1.6
       object.assign: 4.1.4
+
+  /just-extend/5.1.1:
+    resolution: {integrity: sha512-b+z6yF1d4EOyDgylzQo5IminlUmzSeqR1hs/bzjBNjuGras4FXq/6TrzjxfN0j+TmI0ltJzTNlqXUMCniciwKQ==}
+    dev: false
 
   /just-throttle/1.1.0:
     resolution: {integrity: sha512-iePC/13XYX1Tyn9C6jY+DG3UEejkDvrKsw5xxgGhtGUwYWmoJm4CoKexscBKELOu3FTyCDzjr21ZJ67AXnz+bg==}
