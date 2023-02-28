@@ -1,6 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@cloudinary/url-gen': ^1.9.1
+  '@rpldy/upload-preview': ^1.4.0
+  '@rpldy/uploady': ^1.4.0
   autoprefixer: ^10.4.13
   eslint: 8.34.0
   eslint-config-next: 13.2.1
@@ -12,6 +15,9 @@ specifiers:
   tailwindcss: ^3.2.7
 
 dependencies:
+  '@cloudinary/url-gen': 1.9.1
+  '@rpldy/upload-preview': 1.4.0_biqbaboplfbrettd7655fr4n2y
+  '@rpldy/uploady': 1.4.0_biqbaboplfbrettd7655fr4n2y
   eslint: 8.34.0
   eslint-config-next: 13.2.1_7kw3g6rralp5ps6mg3uyzz6azm
   next: 13.2.1_biqbaboplfbrettd7655fr4n2y
@@ -31,6 +37,18 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
+    dev: false
+
+  /@cloudinary/transformation-builder-sdk/1.2.6:
+    resolution: {integrity: sha512-+ae+01Z+g5DprnjP502jqc9iInRHGUEXl0eUQfHjbLI+lJ76TTP5yNqgrnMocy///z1LS/qh4lrOC8DQdKwsNA==}
+    dependencies:
+      '@cloudinary/url-gen': 1.9.1
+    dev: false
+
+  /@cloudinary/url-gen/1.9.1:
+    resolution: {integrity: sha512-P1zgWug/dMieYoA/XxYQloPCLsvm2QWG5AZoMtMqwBFKPljSlLS7o4fFCO5coCt0nv3KKTiygRMSiwKSL/XuLA==}
+    dependencies:
+      '@cloudinary/transformation-builder-sdk': 1.2.6
     dev: false
 
   /@eslint/eslintrc/1.4.1:
@@ -221,6 +239,95 @@ packages:
       picocolors: 1.0.0
       tiny-glob: 0.2.9
       tslib: 2.5.0
+    dev: false
+
+  /@rpldy/abort/1.4.0:
+    resolution: {integrity: sha512-ea8nIhK4y7176wiPzcX1nbUMtsXOT1Mu0t6Qu4zgj4AsoB0pLq899JRA4q3GeR/jr+UEjVX11QYHnyDa4csKxg==}
+    dependencies:
+      '@rpldy/raw-uploader': 1.4.0
+      '@rpldy/shared': 1.4.0
+      '@rpldy/simple-state': 1.4.0
+    dev: false
+
+  /@rpldy/life-events/1.4.0:
+    resolution: {integrity: sha512-KoYOVdQtMkI0zAchz74cRXe3dUOmp0Z2xI10xB+wC2A5BkBNnUb76Qj20xd2NYFjAovtg9+3aMeutVrRgJMgeQ==}
+    dependencies:
+      '@rpldy/shared': 1.4.0
+    dev: false
+
+  /@rpldy/raw-uploader/1.4.0:
+    resolution: {integrity: sha512-08027OMOgWuEybbVDDTHnVIzW7O4tDOOZ1l5iqoQ60TJT1T3L6ARnu1Q35zX9f+DLf5D6KH3OoF9mwB3/yToBA==}
+    dependencies:
+      '@rpldy/life-events': 1.4.0
+      '@rpldy/shared': 1.4.0
+    dev: false
+
+  /@rpldy/sender/1.4.0:
+    resolution: {integrity: sha512-92z347ICzp8TEQsPzBlRrw3zmIPXD3C1GbiEELkXN0vT7LRs4FE4VpkxTVFJmrpxl0vgcQw/ddqsK6byE5zCaQ==}
+    dependencies:
+      '@rpldy/shared': 1.4.0
+    dev: false
+
+  /@rpldy/shared-ui/1.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-qFEiXxSoAxivQoPG4oU0SdQzgLB81U3iVw3409hSV7kAUC+7cz+6m/ZXa3h3BmZw1OnDYcOxtD8WVe2QaI52oA==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@rpldy/shared': 1.4.0
+      '@rpldy/uploader': 1.4.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@rpldy/shared/1.4.0:
+    resolution: {integrity: sha512-OxOV/IQs5SqNdDAcSsqaRAVlbwDLQV0OPQc7/NSyrcE5BLq9egD6Z83xxvOb/G7UIAR0h3ZKGtA9lCk7LXKz1Q==}
+    dependencies:
+      invariant: 2.2.4
+      just-throttle: 1.1.0
+    dev: false
+
+  /@rpldy/simple-state/1.4.0:
+    resolution: {integrity: sha512-61jWvYU1bCgbzRGtk20vf0hGjLX48Zp6dakieAqW9+sucoujrcpxibd6q1cGPsFn/sx5E4xCOVRhJXfY1erTSQ==}
+    dependencies:
+      '@rpldy/shared': 1.4.0
+    dev: false
+
+  /@rpldy/upload-preview/1.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Fy6arG53+DFkiJbt8lsJQXR0YiFQl2ZJEJga28rMahqcrqgHweF5tsaZ/RUBpBBSG4pzbs4yYB8Ub+2bSj49hg==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@rpldy/shared': 1.4.0
+      '@rpldy/shared-ui': 1.4.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@rpldy/uploader/1.4.0:
+    resolution: {integrity: sha512-yQMDLUABmDXPQwgP5G56FYi6fPEv4IYdYiseglNDfU9cVe//84ISOxh+/PqM2cp+LXdv8tMEbj9SO31uAZLniA==}
+    dependencies:
+      '@rpldy/abort': 1.4.0
+      '@rpldy/life-events': 1.4.0
+      '@rpldy/raw-uploader': 1.4.0
+      '@rpldy/sender': 1.4.0
+      '@rpldy/shared': 1.4.0
+      '@rpldy/simple-state': 1.4.0
+    dev: false
+
+  /@rpldy/uploady/1.4.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-CHSr0BHFDwzPudDhmh9wfIxv08eOxKn4465dZyS0NbkTRYDcQSprFWYD3+4PBYlH5IOeD0a++61nInLIBLbv2w==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@rpldy/life-events': 1.4.0
+      '@rpldy/shared': 1.4.0
+      '@rpldy/shared-ui': 1.4.0_biqbaboplfbrettd7655fr4n2y
+      '@rpldy/uploader': 1.4.0
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /@rushstack/eslint-patch/1.2.0:
@@ -1369,6 +1476,12 @@ packages:
       has: 1.0.3
       side-channel: 1.0.4
 
+  /invariant/2.2.4:
+    resolution: {integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==}
+    dependencies:
+      loose-envify: 1.4.0
+    dev: false
+
   /is-arguments/1.1.1:
     resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==}
     engines: {node: '>= 0.4'}
@@ -1562,6 +1675,10 @@ packages:
     dependencies:
       array-includes: 3.1.6
       object.assign: 4.1.4
+
+  /just-throttle/1.1.0:
+    resolution: {integrity: sha512-iePC/13XYX1Tyn9C6jY+DG3UEejkDvrKsw5xxgGhtGUwYWmoJm4CoKexscBKELOu3FTyCDzjr21ZJ67AXnz+bg==}
+    dev: false
 
   /language-subtag-registry/0.3.22:
     resolution: {integrity: sha512-tN0MCzyWnoz/4nHS6uxdlFWoUZT7ABptwKPQ52Ea7URk6vll88bWBVhodtnlfEuCcKWNGoc+uGbw1cwa9IKh/w==}
